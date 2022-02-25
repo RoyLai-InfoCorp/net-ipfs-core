@@ -70,7 +70,7 @@ namespace Ipfs
         /// </remarks>
         public static byte[] Decode(string input)
         {
-            return SimpleBase.Base32.Rfc4648.Decode(input);
+            return SimpleBase.Base32.Rfc4648.Decode(input).ToArray();
         }
 
         /// <summary>
